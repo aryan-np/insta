@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.login-box {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 40px 30px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.logo {
+    font-family: 'Billabong', sans-serif;
+    font-size: 48px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px 8px;
+    margin: 6px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: #3897f0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: #b2dffc;
+}
+
+.or-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.line {
+    height: 1px;
+    width: 35%;
+    background-color: #dbdbdb;
+}
+
+.fb-login {
+    background-color: transparent;
+    color: #385185;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.forgot-password {
+    color: #385185;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    margin-top: 18px;
+}
+
+.signup-box {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.signup-box p {
+    font-size: 14px;
+    color: #262626;
+}
+
+.signup-box a {
+    color: #3897f0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 12px 10px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .or-section {
+        font-size: 12px;
+    }
+
+    .fb-login {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+    }
+
+    .signup-box p {
+        font-size: 13px;
+    }
+}
